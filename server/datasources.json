@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "mysqlIDs": {
-    "host": "localhost",
+    "host": "mfmbackend-beneris.rhcloud.com",
     "port": 3306,
     "database": "mfmbackend",
     "username": "adminPTBRQAK",
