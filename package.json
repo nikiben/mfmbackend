@@ -4,7 +4,7 @@
   "main": "server/server.js",
   "scripts": {
     "pretest": "jshint .",
-	"start": "slc start"
+	"start": "slc run"
   },
   "dependencies": {
     "compression": "^1.0.3",
