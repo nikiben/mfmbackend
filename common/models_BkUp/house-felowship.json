@@ -1,0 +1,24 @@
+{
+  "name": "HouseFelowship",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "houseaddress": {
+      "type": "string",
+      "required": true
+    },
+    "housephone": {
+      "type": "string"
+    },
+    "houseleader": {
+      "type": "string"
+    },
+    "geopoint": {
+      "type": "geopoint"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

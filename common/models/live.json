@@ -1,0 +1,114 @@
+{
+  "name": "Live",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "mfmconnect",
+    "table": "live"
+  },
+  "properties": {
+    "branchid": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "branchid",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchname": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchname",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "streamlink": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "streamlink",
+        "dataType": "tinytext",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "imagelink": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "imagelink",
+        "dataType": "tinytext",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "broadcasttimes": {
+      "type": "String",
+      "required": false,
+      "length": 65535,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "broadcasttimes",
+        "dataType": "text",
+        "dataLength": 65535,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "description": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "description",
+        "dataType": "tinytext",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

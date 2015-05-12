@@ -1,0 +1,34 @@
+{
+  "name": "Prayerpoints",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle1": {
+      "type": "string"
+    },
+    "subtitle2": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "prayerXML": {
+      "type": "string"
+    },
+    "viewCounter": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

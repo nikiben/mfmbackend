@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Feeds": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Profile": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Prayerpoints": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Publications": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Login": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Branches": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Live": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Housefellowship": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  },
+  "Radio": {
+    "dataSource": "mysqlIDs",
+    "public": true
+  }
+}

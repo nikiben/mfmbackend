@@ -1,0 +1,36 @@
+{
+  "name": "Feeds",
+  "plural": "Feeds",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "feedId": {
+      "type": "number",
+      "required": true
+    },
+    "branchId": {
+      "type": "number",
+      "required": true
+    },
+    "feedTitle": {
+      "type": "string",
+      "required": true
+    },
+    "feedText": {
+      "type": "string",
+      "required": true
+    },
+    "feedImg": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

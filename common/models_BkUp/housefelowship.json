@@ -1,0 +1,96 @@
+{
+  "name": "Housefelowship",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "mysql": {
+    "schema": "mfmconnect",
+    "table": "housefelowship"
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "houseaddress": {
+      "type": "String",
+      "required": true,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "houseaddress",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "housephone": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "housephone",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "houseleader": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "houseleader",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "geopoint": {
+      "type": "GeoPoint",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "geopoint",
+        "dataType": "point",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

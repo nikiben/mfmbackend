@@ -1,0 +1,256 @@
+{
+  "name": "Branches",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "mysql": {
+    "schema": "mfmconnect",
+    "table": "branches"
+  },
+  "properties": {
+    "branchid": {
+      "type": "String",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "branchId",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": true
+    },
+    "branchname": {
+      "type": "String",
+      "required": true,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchName",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": true
+    },
+    "address1": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "address1",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": true
+    },
+    "address2": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "address2",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "city": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "city",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "province": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "province",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "country": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "country",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "postal": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "postal",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "region": {
+      "type": "Number",
+      "required": false,
+      "length": 5,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "region",
+        "dataType": "int",
+        "dataLength": 5,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "headquarters": {
+      "type": "Number",
+      "required": false,
+      "length": 5,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "headquarters",
+        "dataType": "int",
+        "dataLength": 5,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "phone": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "phone",
+        "dataType": "varchar",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "email": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "email",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "img": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "img",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "geopoint": {
+      "type": "GeoPoint",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "geopoint",
+        "dataType": "point",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchpastor": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchPastor",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

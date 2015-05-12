@@ -1,0 +1,31 @@
+{
+  "name": "Profile",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "homebranch": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

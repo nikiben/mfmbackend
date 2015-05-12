@@ -1,0 +1,192 @@
+{
+  "name": "Branches",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "mysql": {
+    "schema": "mfmconnect",
+    "table": "branches"
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "branchid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "branchId",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "branchname": {
+      "type": "String",
+      "required": true,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchName",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "branchaddress": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchAddress",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchimg": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchImg",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchgeopoint": {
+      "type": "GeoPoint",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchGeoPoint",
+        "dataType": "point",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchpastor": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchPastor",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchcity": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchCity",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchprovince": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchProvince",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchcountry": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchCountry",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "branchpostal": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "branchPostal",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

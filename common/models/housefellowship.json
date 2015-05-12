@@ -1,0 +1,179 @@
+{
+  "name": "Housefellowship",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "mfmconnect",
+    "table": "housefellowship"
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "address1": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "address1",
+        "dataType": "tinytext",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "address2": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "address2",
+        "dataType": "tinytext",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "city": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "city",
+        "dataType": "varchar",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "province": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "province",
+        "dataType": "varchar",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "postal": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "postal",
+        "dataType": "varchar",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "phone1": {
+      "type": "String",
+      "required": true,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "phone1",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "phone2": {
+      "type": "String",
+      "required": true,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "phone2",
+        "dataType": "varchar",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "leader": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "leader",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "geopoint": {
+      "type": "GeoPoint",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "geopoint",
+        "dataType": "point",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

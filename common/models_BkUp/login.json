@@ -1,0 +1,42 @@
+{
+  "name": "Login",
+  "plural": "Login",
+  "base": "User",
+  "idInjection": true,
+  "properties": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "homebranch": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "profileText": {
+      "type": "string"
+    },
+    "profilePic": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
