@@ -4,12 +4,12 @@
     "connector": "memory"
   },
   "mysqlIDs": {
-    "host": "mfmbackend-beneris.rhcloud.com",
-    "port": 3306,
+    "host": "OPENSHIFT_MYSQL_DB_HOST",
+    "port": OPENSHIFT_MYSQL_DB_PORT,
     "database": "mfmbackend",
     "username": "adminPTBRQAK",
     "password": "XgsZzrFhmRnI",
     "name": "mysqlIDs",
-    "connector": "mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/"
+    "connector": "mysql"
   }
 }
